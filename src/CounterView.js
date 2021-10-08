@@ -1,9 +1,13 @@
 import Component from "./Component.js";
 
 export default class CounterView extends Component {
-  template() {
+  setup() {
     const { count } = this.props;
     this.state = { count };
+  }
+
+  template() {
+    const { count } = this.state;
     this.$target = document.createElement("span");
     this.$target.innerText = count;
     this.$target.className = "count";
