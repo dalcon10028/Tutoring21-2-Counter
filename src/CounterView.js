@@ -19,9 +19,4 @@ export default class CounterView extends Component {
     const { count } = this.state;
     this.$target.innerText = count + "";
   }
-
-  setState(nextState) {
-    this.state = { ...this.state, ...nextState };
-    this.render();
-  }
 }

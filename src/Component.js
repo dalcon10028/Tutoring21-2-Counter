@@ -7,6 +7,7 @@ export default class Component {
     this.setEvent();
     this.render();
   }
+
   setup() {}
   template() {}
   setEvent() {}
