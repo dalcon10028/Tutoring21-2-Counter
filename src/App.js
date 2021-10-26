@@ -10,7 +10,7 @@ export default class App {
     }
 
     setState(nextState) {
-        this.state = { ...this.state, nextState };
+        this.state = { ...this.state, ...nextState };
         this.render();
     }
 
